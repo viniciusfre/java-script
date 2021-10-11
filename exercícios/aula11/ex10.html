@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Radar</h1>
+    Coloque sua velocidade aqui:
+    <input type="number" name="radar" id="t"> km/h
+    <input type="button" value="calcule" onclick="calcular()">
+    <div id="tel">
+
+    </div>
+    <script>
+        function calcular() {
+            var txt = window.document.getElementById("t")
+            var tela = window.document.getElementById("tel")
+            var valor = Number(txt.value)
+            tela.innerText = `Sua velocidade é de ${valor} km/h`
+            if(valor > 60){
+                tela.innerHTML+= ' <br>Você está acima da velocidade permitida,<strong>MULTADO</strong>'
+
+            }
+            
+            
+            
+            
+        }
+
+    </script>
+    
+</body>
+</html>

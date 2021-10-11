@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de Script</title>
+</head>
+<body>
+    
+    <script>
+        var numero = 5
+        var tentativas = 3
+        while(tentativas != 0){
+            var chute = Number(window.prompt('Digite seu chute'))
+            if(chute == numero){
+                window.alert('Você acertou')
+                break
+            }
+            else if (chute == ''){
+                window.alert('Número inválido, tente novamente')
+            }    
+            else{
+                window.alert('Você errou')
+                tentativas--
+            }    
+            if(tentativas == 0){
+             window.alert('Suas chances acabaram')
+            }else{}
+                          
+                    
+                
+               
+            
+        
+
+            
+
+
+        }
+    </script>
+</body>
+</html>

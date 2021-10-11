@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador de País</title>
+</head>
+<body>
+    <h1>Estrangeiro ou brasileiro ?</h1>
+    Coloque seu país aqui : <input type="text" name="txt" id="txt">
+    <input type="button" value="teste" onclick="testar()">
+    <div id="tela">
+
+    </div>
+    <script>
+        function testar(){
+            var txt = window.document.getElementById('txt')
+            var tela = window.document.getElementById('tela')
+            var valor = txt.value
+            var país = 'brasil'
+            tela.innerText = `Você é do ${valor}`
+            if(valor == país){
+                tela.innerHTML+= '<br>Logo, você é brasileiro'
+            }else{
+            tela.innerHTML+= '<br>Logo, você é estrangeiro'
+        }
+
+        }
+    </script>
+    
+</body>
+</html>

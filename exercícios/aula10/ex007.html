@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somador</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txt1" id="txt1"> <span id="span"></span>
+    <input type="number" name="txt2" id="txt2">
+    <input type="button" value="Resultado" onclick="calcular()">
+    <p></p>
+    
+
+    
+    <script>
+         var simbolo = window.prompt('Qual sua operação ? + ou - ou / ou *')
+         var operacional = simbolo
+         var s = window.document.getElementById('span')
+         s.innerHTML = operacional
+         var adiçao = '+'
+         var subtraçao = '-'
+         var divisao = '/'
+         var multiplicaçao = '*'
+         
+         if(simbolo == adiçao ){
+            function calcular(){
+            var txt1 = window.document.getElementById('txt1')
+            var txt2 = window.document.getElementById('txt2')
+            var n1 = Number(txt1.value)
+            var n2 = Number(txt2.value)
+            var res = n1 + n2
+            var p = window.document.getElementsByTagName('p')[0]
+            p.innerText = `O resultado é ${res}`
+
+        }
+
+         }
+        if(simbolo == subtraçao){
+            function calcular(){
+            var txt1 = window.document.getElementById('txt1')
+            var txt2 = window.document.getElementById('txt2')
+            var n1 = Number(txt1.value)
+            var n2 = Number(txt2.value)
+            var res = n1 - n2
+            var p = window.document.getElementsByTagName('p')[0]
+            p.innerText = `O resultado é ${res}`
+
+        }
+    }
+    if(simbolo == multiplicaçao){
+            function calcular(){
+            var txt1 = window.document.getElementById('txt1')
+            var txt2 = window.document.getElementById('txt2')
+            var n1 = Number(txt1.value)
+            var n2 = Number(txt2.value)
+            var res = n1 * n2
+            var p = window.document.getElementsByTagName('p')[0]
+            p.innerText = `O resultado é ${res}`
+
+        }
+    }
+    if(simbolo == divisao){
+            function calcular(){
+            var txt1 = window.document.getElementById('txt1')
+            var txt2 = window.document.getElementById('txt2')
+            var n1 = Number(txt1.value)
+            var n2 = Number(txt2.value)
+            var res = n1 / n2
+            var p = window.document.getElementsByTagName('p')[0]
+            p.innerText = `O resultado é ${res}`
+
+        }
+    }
+        
+        
+    </script>
+
+</body>
+</html>
